@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.page1 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.page1 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.page1-content {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.407);
+}
+
+.cursor {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(182, 89, 8);
+    position: fixed;
+    left: 100px;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    
+}
+
+.cursor,h5{
+    font-size: 16px;
+}
+
+#nav {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 60px;
+    width: 120px;
+    margin-right: 190px;
+    margin-top: 20px;
+    
+    
+}
+.centerNav {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: whitesmoke;
+    font-family: "Inter", sans-serif;
+}
+
+.rightNav {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: rgb(255 255 255 / 60%);
+    line-height: 22px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 65px;
+}
+
+i, .location {
+    font-size: 26px;
+}
+
+.Register-signIn {
+    height: 38px;
+    width: 150px;
+    margin-left: 25px;
+    font-size: 15px;
+    font-weight: 700;
+    color: whitesmoke;
+    font-family: "Inter", sans-serif;
+    border: 2px solid white;
+    border-radius: 10px;
+    /* background-color: rgb(7, 7, 48); */
+    background-color: rgb(163, 49, 7);
+}
+
+.user {
+    margin-left: 20px;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.heroText {
+    position: absolute;
+    bottom: 0;
+    height: 500px;
+    width: 100%;
+    /* border: 2px solid black; */
+    text-align: center;
+}
+
+.page2 {
+    height: 85%;
+    width: 100%;
+
+}
+
+.first {
+    font-size: 100px;
+    font-family: "Inter", sans-serif;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* For Safari/Chrome */
+    background-clip: text;
+    color: transparent; 
+}
+
+.second {
+    font-size: 190px;
+    font-family: "Nunito", sans-serif;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* For Safari/Chrome */
+    background-clip: text;
+    color: transparent; 
+    /* line-height: 180px; */
+    letter-spacing: 1px;
+
+}
+
+.scroller {
+    margin-top: 40px;
+    /* background-color: red; */
+    white-space: nowrap;
+    display: flex;
+    overflow-x: auto;
+}
+
+.scroller-in {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.scroller h4 {
+    display: inline-block;
+    font-size: 85px;
+    font-weight: 900;
+    margin-right: 20px;
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(169, 59, 16, 0.405);
+    font-family: "gilroy";
+    transition: all linear 0.5s;
+}
+
+.scroller h4:hover {
+    color: rgb(255, 94, 0);
+
+}
+
+@keyframes scroll {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }  
+}
+
+.card-container {
+    height: 60vh;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-top: 40px;
+
+}
+
+.card {
+    height: 80%;
+    width: 24%;
+    background-color: blue;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+#card1 {
+    background-image: url(https://media.istockphoto.com/id/668503732/photo/young-woman-practicing-cobra-pose.jpg?s=612x612&w=0&k=20&c=uT9TWGS_RWlHd7pRsn9UzR5VI8S_7_V4ICtMnT5oO8c=);
+}
+
+#card2 {
+    background-image: url(https://assets-global.website-files.com/5ca5fe687e34be0992df1fbe/5ecce984a3a668145788b41e_IMG_1071-min.JPG);
+}
+
+#card3 {
+    background-image: url(https://media.istockphoto.com/id/177092995/photo/salamba-sarvangasana.jpg?s=612x612&w=0&k=20&c=j4n6jb6YoY_Dep9CBGKzNPm9SXkzvKXfPg__53xavLI=);
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color:  rgb(255, 94, 0);
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    border-radius: 20px;
+    transition: ease-in 2s;
+}
+
+.overlay h4 {
+    font-size: 32px;
+    font-weight: 700;
+   
+}
+
+.overlay p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.card:hover {
+    transition: ease 2s;
+    transform: rotate3d(1,1,0,20deg);
+}
+
+.page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 94, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.page3 p {
+    width: 50%;
+    font-size: 25px;
+    text-align: center;
+    color: whitesmoke;
+    line-height: 35px;
+}
+
+.page3 img {
+    height: 60px;
+}
+
+.colon1 {
+   position: absolute;
+   left: 200px;
+   top: 120px;
+   font-size: 2px;
+}
+
+.colon2 {
+    position: absolute;
+    right: 200px;
+    bottom: 120px;
+
+}
+
+
+  .registration-page {
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: red;
+    position: absolute;
+    z-index: 15;
+  }
+
+
+  
+  .container {
+    width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .gender-options {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+.your-videos {
+    height: fit-content;
+    width: 100%;
+    background-color: pink;
+    display: none;
+    position: relative;
+    bottom: 1000px;
+    z-index: 87;
+  }
+
+  .first-video {
+    height: 700px;
+    width: 100%;
+    border: 2px solid black;
+    
+    display: flex;
+
+    
+  }
+
+  .yog1 {
+    height: 600px;
+    width: 800px;
+    position: relative;
+    left: 330px;  
+}
+
+
+.container-feedback {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    height: 100vh;
+
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .feedbackDiv {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    position: relative;
+    top: 630px;
+    left: 39%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+
+  }
+
+  .Attendance-container {
+   height: 2000px;
+   width: 100%;
+    margin: 0px auto;
+    padding: 20px;
+    display: none;
+    background-color: white;
+    z-index: 99;
+    background-image: url("chakrasana.png");
+    background-position: center;
+    background-size: cover;
+  
+  
+   
+}
+h1 {
+    text-align: center;
+}
+.days {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.day {
+    text-align: center;
+    margin-bottom: 20px; /* Increased margin */
+    position: relative;
+}
+.bar {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    margin-top: 10px; /* Increased gap between day and bar */
+}
+.day[data-color='green'] .bar {
+    background-color: #4CAF50; /* Green */
+}
+.day[data-color='blue'] .bar {
+    background-color: #2196F3; /* Blue */
+}
+.day[data-color='orange'] .bar {
+    background-color: #FF9800; /* Orange */
+}
+  
+
+  
+
+
+  
+
+
